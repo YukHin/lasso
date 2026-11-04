@@ -1,0 +1,6 @@
+{
+  "name": "lasso",
+  "description": "Lasso: a PDF and image reader beside the chat for Claude Code.",
+  "owner": { "name": "YukHin" },
+  "plugins": [{ "name": "lasso", "source": "./" }]
+}

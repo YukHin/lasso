@@ -1,0 +1,12 @@
+{
+  "name": "lasso",
+  "version": "0.3.0",
+  "description": "Read PDFs and images beside the chat: circle a region or select text and add it to the conversation; offers a refresh when the file changes.",
+  "author": { "name": "YukHin" },
+  "license": "MIT",
+  "homepage": "https://github.com/YukHin/lasso",
+  "repository": "https://github.com/YukHin/lasso",
+  "keywords": ["pdf", "image", "reader", "viewer", "annotate", "pdf.js"],
+  "icon": "./.claude-plugin/icon.png",
+  "types": "./types/index.d.ts"
+}

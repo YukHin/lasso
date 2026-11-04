@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>__TITLE__</title>
+<link rel="stylesheet" href="/vendor/web/pdf_viewer.css">
+<link rel="stylesheet" href="/static/reader.css">
+<script>window.READER = __CONFIG__</script>
+</head>
+<body>
+<header id="toolbar">
+  <div class="group">
+    <span id="docName" class="doc-name"></span>
+  </div>
+  <div class="group pdf-only">
+    <button id="prevPage" data-i18n-title="prev">‹</button>
+    <input id="pageInput" type="text" inputmode="numeric" data-i18n-label="page">
+    <span id="pageCount" class="dim">/ –</span>
+    <button id="nextPage" data-i18n-title="next">›</button>
+  </div>
+  <div class="group">
+    <button id="zoomOut" data-i18n-title="zoomOut">−</button>
+    <button id="zoomLabel" data-i18n-title="fit">100%</button>
+    <button id="zoomIn" data-i18n-title="zoomIn">+</button>
+  </div>
+  <div class="group tools" role="radiogroup">
+    <button id="toolText" class="tool active" data-tool="text" data-i18n="toolText" data-i18n-title="toolTextTitle"></button>
+    <button id="toolLasso" class="tool" data-tool="lasso" data-i18n="toolLasso" data-i18n-title="toolLassoTitle"></button>
+  </div>
+  <div class="group grow pdf-only">
+    <input id="findInput" type="search" data-i18n-ph="find">
+    <span id="findStatus" class="dim"></span>
+  </div>
+  <div class="group grow image-only"></div>
+  <span id="conn" class="conn" data-i18n-title="conn"></span>
+</header>
+
+<div id="banner" hidden>
+  <span id="bannerText"></span>
+  <button id="bannerRefresh" class="primary" data-i18n="refresh"></button>
+  <button id="bannerDismiss" data-i18n="dismiss"></button>
+</div>
+
+<div id="viewerContainer" tabindex="0">
+  <div id="viewer" class="pdfViewer"></div>
+</div>
+
+<div id="popover" hidden>
+  <div class="pop-preview">
+    <img id="popImage" alt="">
+    <div id="popText" class="pop-text"></div>
+  </div>
+  <textarea id="popNote" rows="2" data-i18n-ph="notePh"></textarea>
+  <div class="pop-actions">
+    <span id="popMeta" class="dim"></span>
+    <button id="popCancel" data-i18n="cancel"></button>
+    <button id="popAdd" data-i18n="add" data-i18n-title="addTitle"></button>
+    <button id="popSend" class="primary" data-i18n="send" data-i18n-title="sendTitle"></button>
+  </div>
+</div>
+
+<div id="toast" hidden></div>
+
+<script type="module" src="/static/reader.js"></script>
+</body>
+</html>
