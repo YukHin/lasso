@@ -48,10 +48,6 @@ To be its default viewer, Lasso adds a short note to the system prompt and turns
 
 `/lasso shell` writes only under `HKCU\Software\Classes` (your user, no admin rights): a "Show more options" entry for PDFs and images, and Lasso in the "Open with" list.
 
-## 中文简介
-
-Lasso 是 Claude Code 里的 PDF / 图片阅读器，显示在对话旁边：按 `L` 圈选公式、图表或段落，输入问题后回车，Claude 就会收到这块区域的高清截图和其中的文字；「添加」则先放在输入框上方，随下一条消息一起发送。文件在磁盘上被修改时会弹出提示，手动点「刷新」，保留当前页面和位置。界面语言跟随 Claude 的设置或你的提问语言。
-
 ## License
 
 MIT
